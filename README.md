@@ -42,6 +42,7 @@ meteosapi.getForecast(proviceKey).then(console.log);
 
 ### getForecast(provinceId)
 Ask for the weather forecast in a given province, the province code can be obtained from [here](http://www.ine.es/jaxi/menu.do?type=pcaxis&path=/t20/e245/codmun&file=inebase)
+or from [here](https://iagolast.github.io/pselect/)
 
 #### Example Response
 

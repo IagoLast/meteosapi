@@ -15,7 +15,6 @@ describe('Meteosapi', () => {
 			assert.notEqual(data.tomorrow, undefined, 'Data.province should be defined');
 			assert.notEqual(data.next2, undefined, 'Data.province should be defined');
 			assert.notEqual(data.forecast, undefined, 'Data.province should be defined');
-			console.log(data);
 		});
 	});
 });
