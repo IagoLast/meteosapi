@@ -1,6 +1,6 @@
 {
   "name": "meteosapi",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "nodejs wrapper over the Aemet public API",
   "main": "src/index.js",
   "directories": {
