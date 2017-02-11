@@ -1,4 +1,7 @@
+const iconv = require('iconv-lite');
+
 function Prediction(data) {
+	data = iconv.decode(data, "ISO-8859-1");
 	var data = JSON.parse(data)[0];
 	var name = data.nombre;
 	var province = data.provincia;

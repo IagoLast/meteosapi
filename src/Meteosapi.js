@@ -7,7 +7,7 @@ function Meteosapi(apiKey) {
 		getForecast: function(id) {
 			let options = Options(id, apiKey);
 			return rp(options)
-				.then(response => rp(JSON.parse(response).datos)
+				.then(response => rp({url: JSON.parse(response).datos, encoding: null})
 				.then(response => Prediction(response)));
 		}
 	}

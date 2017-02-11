@@ -6,7 +6,7 @@ function Options(id, apiKey) {
 		headers: {
 			api_key: apiKey,
 			Accept: 'application/javascript',
-		}
+		},
 	}
 }
 
