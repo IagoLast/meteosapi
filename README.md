@@ -40,6 +40,62 @@ let proviceKey = 36038;
 meteosapi.getForecast(proviceKey).then(console.log);
 ```
 
+### getSimpleForecast(provinceId)
+Ask for the simplified weather forecast in a given province for the next 3 days. The province code can be obtained from [here](http://www.ine.es/jaxi/menu.do?type=pcaxis&path=/t20/e245/codmun&file=inebase)
+or from [here](https://iagolast.github.io/pselect/)
+
+#### Example Response
+
+`getSimpleForecast` returns a data object with the following fields:
+
+- `name`: Name of the municipe of the predicion
+- `province`: Names of the required province.
+- `today`: Simplified forecast for the current day
+- `tomorrow`: Simplified forecast for the next today
+- `next2`: Simplified forecast for the day after tomorrow
+
+
+A `simplified forecast` has the following fields:
+
+- `value`: The wheater forecast value.
+- `description`: User readable weather forecast description.
+- `tmp`: The temperature values for the day
+    - `min`: The expected min temperature 
+    - `max`: The expected max temperature 
+
+Example response:
+
+```javascript
+{
+    name: 'Pontevedra',
+    province: 'Pontevedra',
+    today: {
+        value: '13',
+        descripcion: 'Intervalos nubosos',
+        tmp: {
+            min: 6,
+            max: 13
+        }
+    },
+    tomorrow: {
+        value: '13',
+        descripcion: 'Intervalos nubosos',
+        tmp: {
+            min: 5,
+            max: 16
+        }
+    },
+    next2: {
+        value: '25',
+        descripcion: 'Muy nuboso con lluvia',
+        tmp: {
+            min: 7,
+            max: 13
+        }
+    },
+}
+````
+
 ### getForecast(provinceId)
 Ask for the weather forecast in a given province, the province code can be obtained from [here](http://www.ine.es/jaxi/menu.do?type=pcaxis&path=/t20/e245/codmun&file=inebase)
 or from [here](https://iagolast.github.io/pselect/)
