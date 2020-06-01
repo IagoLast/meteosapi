@@ -1,1 +1,1 @@
-module.exports = require('./MeteoSapi.js')
+module.exports = require('./Meteosapi')

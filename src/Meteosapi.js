@@ -1,6 +1,6 @@
 const rp = require('request-promise');
-const Prediction = require('./Prediction.js');
-const Options = require('./Options.js');
+const Prediction = require('./Prediction');
+const Options = require('./Options');
 
 function Meteosapi(apiKey) {
 	return {

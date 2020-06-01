@@ -1,4 +1,4 @@
-const Meteosapi = require('../src/index.js');
+const Meteosapi = require('../src/index');
 const assert = require('assert');
 require('dotenv').load();
 
