@@ -13,7 +13,7 @@ nodejs wrapper over the Aemet public API
 ### Get an API key
 Go to the [Aemet OpenData Website](https://opendata.aemet.es/centrodedescargas/altaUsuario?) and follow the instructions to get an API key.
 
-### Crate a .env file
+### Create a .env file
 Since the Aemet doesn´t provide a valid ssl cerfificate nodejs will reject all the requests, to prevent this use `NODE_TLS_REJECT_UNAUTHORIZED=0`.
 The env file also will set the **api-key** used in the unit tests.
 
